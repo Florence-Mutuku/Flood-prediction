@@ -61,23 +61,31 @@ This project develops machine learning models to predict flood probabilities, en
 * Actual vs. Predicted Values Scatter Plot
 * Residual Analysis
 ## Project Structure
-flood-prediction/
-│
-├── data/
-│   └── flood.csv                  # Main dataset
-│
-├── notebooks/
-│   └── flood_prediction_notebook.ipynb   # Analysis notebook
-│
-├── models/
-│   ├── linear_regression.pkl      # Saved Linear Regression model
-│   ├── random_forest.pkl          # Saved Random Forest model  
-│   ├── gradient_boosting.pkl      # Saved Gradient Boosting model
-│   └── xgboost.pkl                # Saved XGBoost model
-│
-├── requirements.txt               # Dependencies
-└── README.md                      # This file
+*flood-prediction/
 
+  *data/
+
+       *flood.csv (Main dataset)
+
+
+ *Notebooks/
+
+            *flood_prediction_notebook.ipynb (Analysis notebook)
+
+
+ *models/
+
+        1.Linear_regression.pkl (Saved Linear Regression model)
+        2.Random_forest.pkl (Saved Random Forest model)
+        3.Gradient_boosting.pkl (Saved Gradient Boosting model)
+        4.Xgboost.pkl (Saved XGBoost model)
+ *flood_prediction_scaler.pkl (Saved MinMaxScaler)
+
+
+ *requirements.txt (Dependencies)
+ *README.md (This file)
+
+      
 ## Setup
 
 1.  Python 3.x
