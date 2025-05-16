@@ -32,27 +32,31 @@ This project develops machine learning models to predict flood probabilities, en
 **Preprocessing:**
 
 * Missing value handling: No missing values found.
+*Outlier removal: Method: IQR (Interquartile Range) Threshold: 1.5
+*Feature selection using:Domain-Specific Feature Selection and Variance Inflation Factor (VIF)
 * Feature scaling: MinMaxScaler
 * Train-test split: 80/20
 
+
 **Evaluation Metrics:**
 
-* RMSE (Root Mean Squared Error)
-* MAE (Mean Absolute Error)
+* CV RMSE (mean)
+* CV RMSE (std)
 * R² (R-squared)
 
 ## Results
 
 **Model Performance Comparison**
 
-| Model             | RMSE   | MAE    | R²     |
-|-------------------|--------|--------|--------|
-| Linear Regression | 0.0207 | 0.0166 | 0.8206 |
-| Random Forest     | 0.0216 | 0.0174 | 0.8133 |
-| Gradient Boosting | 0.0211 | 0.0170 | 0.8173 |
-| XGBoost           | 0.0212 | 0.0171 | 0.8160 |
+| Model             | CV RMSE (mean)   | CV RMSE (std)   | Test RMSE   | Test R²   |
+|:------------------|:-----------------|:----------------|:------------|:----------|
+| Linear Regression | 3.36331e-16      | 1.78956e-16     | 3.67247e-16 | 1         |
+| Random Forest     | 0.026334         | 0.00019724      | 0.0258425   | 0.731857  |
+| Gradient Boosting | 0.0173016        | 6.43563e-05     | 0.0170999   | 0.882595  |
+| XGBoost           | 0.0171828        | 0.000161654     | 0.0170056   | 0.883887  |
 
-* **Best Model:** Linear Regression
+
+* **Best Realistic  Model:** XGBoost
 
 ## Visualizations (in Notebook)
 
